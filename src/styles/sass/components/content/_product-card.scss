@@ -1,0 +1,98 @@
+@use "../../abstracts/variables"as *;
+@use "../../abstracts/mixins"as *;
+
+.product-box {
+  position: relative;
+  background-image:
+    linear-gradient(to bottom, rgba($color-gray-2, 0.8)),
+    url("/images/back.png");
+  background-repeat: no-repeat;
+  background-size:
+    100% 100%,
+    100% 50%;
+  background-position:
+    0 0,
+    0 100%;
+  clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%, 0 100px);
+
+  border-top-right-radius: 1.6rem;
+  border-bottom-right-radius: 1.6rem;
+  border-bottom-left-radius: 1.6rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+  justify-content: center;
+
+  gap: 1rem;
+  padding: 4rem 8rem;
+
+  overflow: hidden;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: $color-white;
+  padding: 0.8rem;
+  border-radius: 1.6rem;
+  position: relative;
+
+  &__label {
+    font-family: Vazir;
+    position: absolute;
+    top: 16px;
+    left: -6px;
+    background-color: $color-primary-100;
+    padding: 0.2rem 1.2rem;
+    border-radius: 6px;
+  }
+
+  &__picture-box {
+    @include flex-center;
+    background-color: $color-white;
+    border-radius: 12px;
+  }
+
+  &__picture {
+    padding: 1rem 0;
+    background-size: cover;
+  }
+
+  &__text-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-size: $default-font-size;
+    font-family: Vazir_Bold;
+    color: $color-gray;
+  }
+
+  &__icon {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  &__feature-box {
+    display: flex;
+    gap: 0.8rem;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid $color-gray-100;
+
+    &-span {
+      font-size: 1.2rem;
+      font-family: Vazir;
+      padding: 0.2rem 1rem;
+      background-color: $color-gray-100;
+      border-radius: 0.6rem;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

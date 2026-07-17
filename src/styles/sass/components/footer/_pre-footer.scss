@@ -1,0 +1,9 @@
+@use "../../abstracts/variables"as*;
+
+.pre-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white;
+    padding: 3rem 0;
+}
