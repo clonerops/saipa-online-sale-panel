@@ -13,7 +13,7 @@
   background-position:
     0 0,
     0 100%;
-  clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%, 0 100px);
+  clip-path: $clip-path-100;
 
   border-top-right-radius: 1.6rem;
   border-bottom-right-radius: 1.6rem;
@@ -35,11 +35,11 @@
   gap: 8px;
   background-color: $color-white;
   padding: 0.8rem;
-  border-radius: 1.6rem;
+  border-radius: $default-border-radius;
   position: relative;
 
   &__label {
-    font-family: Vazir;
+    font-family: $default-font-family;
     position: absolute;
     top: 16px;
     left: -6px;
@@ -66,7 +66,7 @@
 
   &__text {
     font-size: $default-font-size;
-    font-family: Vazir_Bold;
+    font-family: $font-family-BOLD;
     color: $color-gray;
   }
 
@@ -83,7 +83,7 @@
 
     &-span {
       font-size: $font-size-1-2;
-      font-family: Vazir;
+      font-family: $default-font-family;
       padding: 0.2rem 1rem;
       background-color: $color-gray-100;
       border-radius: 0.6rem;
