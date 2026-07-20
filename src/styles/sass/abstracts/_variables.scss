@@ -1,9 +1,8 @@
+// COLORS
 $color-primary: #ff6b00;
 $color-primary-100: #feecdc;
-
 $color-secondary: #00567d;
 $color-secondary-opacity-16: #00567d29;
-
 $color-gray: #717271;
 $color-gray-1: #ebeff5;
 $color-gray-2: #e7eaef;
@@ -12,17 +11,38 @@ $color-gray-100: #f3f4f6;
 $color-gray-200: #e5e7eb;
 $color-gray-300: #D1D5DB;
 $color-gray-400: #9ca3af;
-
 $color-white: #fff;
 $color-black: #000;
-
 // FONT  SIZE
 $default-font-size: 1.6rem;
+
+$font-size-1: 1rem;
+$font-size-1-2: 1.2rem;
+$font-size-1-3: 1-3rem;
+$font-size-1-4: 1.4rem;
+$font-size-1-8: 1.8rem;
+$font-size-2: 2rem;
+$font-size-2-4: 1.8rem;
+$font-size-3-2: 3.2rem;
+// FONT  FAMILY
+$default-font-family: Vazir;
+
+$font-family-BOLD: Vazir_Bold;
+$font-family-MEDIUM: Vazir_Medium;
+$font-family-REQULAR: Vazir_Reqular;
+$font-family-THIN: Vazir_Thin;
+// BORDER REDIUS
+$default-border-radius: 1.6rem;
+
+$border-radius-1: 1rem;
+$border-radius-1-2: 1.2rem;
+$border-radius-1-3: 1-3rem;
+$border-radius-1-4: 1.4rem;
+$border-radius-1-8: 1.8rem;
+$border-radius-2: 2rem;
+$border-radius-2-4: 1.8rem;
+$border-radius-3-2: 3.2rem;
 // CLIP PATH
 $clip-path-30: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
 $clip-path-40: polygon(40px 0, 100% 0, 100% 100%, 0 100%, 0 40px);
-$clip-path-50: polygon(50px 0, 100% 0, 100% 100%, 0 100%, 0 50px);
 $clip-path-100: polygon(100px 0, 100% 0, 100% 100%, 0 100%, 0 100px);
-
-// BOX SHADOW
-$default-box-shadow: 0 1rem 4rem rgba($color-black, .2)
