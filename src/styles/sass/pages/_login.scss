@@ -1,12 +1,11 @@
 @use "../abstracts/variables"as*;
+@use "../abstracts/mixins"as*;
 
 .login {
     width: 100%;
     min-height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 
     &__wrapper {
         background-color: #fff;
@@ -19,6 +18,11 @@
         &-inner {
             padding: 10rem;
         }
+    }
+
+    &__action {
+        @include flex-center;
+        flex-direction: column;
     }
 
     &__header {

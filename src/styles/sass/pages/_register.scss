@@ -1,18 +1,16 @@
 @use "../abstracts/variables"as*;
+@use "../abstracts/mixins"as*;
 
 .register {
     width: 100%;
     background-color: $color-white;
-
-    display: flex;
-    flex-direction: column;
+@include flex-column;
     align-items: center;
     gap: 1rem;
     padding: 3rem 0;
 
     &__header {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: center;
         gap: 1rem;
 
