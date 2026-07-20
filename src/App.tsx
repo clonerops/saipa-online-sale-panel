@@ -8,10 +8,10 @@ import HomePage from "./pages/home/HomePage";
 const App = () => {
   return (
     <Routes>
+      <Route element={<LoginPage />} path="/login" />
+      <Route element={<RegisterPage />} path="/register" />
       <Route element={<Layout />}>
         <Route index element={<Navigate to="/login" replace />} />
-        <Route element={<LoginPage />} path="/login" />
-        <Route element={<RegisterPage />} path="/register" />
         <Route element={<HomePage />} path="/home" />
       </Route>
     </Routes>

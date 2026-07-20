@@ -18,3 +18,11 @@ $color-black: #000;
 
 // FONT  SIZE
 $default-font-size: 1.6rem;
+// CLIP PATH
+$clip-path-30: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
+$clip-path-40: polygon(40px 0, 100% 0, 100% 100%, 0 100%, 0 40px);
+$clip-path-50: polygon(50px 0, 100% 0, 100% 100%, 0 100%, 0 50px);
+$clip-path-100: polygon(100px 0, 100% 0, 100% 100%, 0 100%, 0 100px);
+
+// BOX SHADOW
+$default-box-shadow: 0 1rem 4rem rgba($color-black, .2)

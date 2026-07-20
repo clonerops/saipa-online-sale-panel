@@ -2,13 +2,24 @@
 
 .login {
     width: 100%;
-    background-color: $color-white;
+    min-height: 100vh;
 
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    padding: 3rem 0;
+
+    &__wrapper {
+        background-color: #fff;
+        border-radius: 1.6rem 1.6rem 1.6rem 4rem;
+        clip-path: $clip-path-100;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &-inner {
+            padding: 10rem;
+        }
+    }
 
     &__header {
         display: flex;
@@ -27,16 +38,6 @@
             font-size: $default-font-size;
             font-family: Vazir_Bold;
             color: $color-gray;
-
-        }
-
-        &-text-register {
-            padding-right: .6rem;
-            font-size: $default-font-size;
-            font-family: Vazir_Bold;
-            color: $color-primary;
-            text-decoration: none;
-
 
         }
     }
@@ -59,19 +60,27 @@
         }
     }
 
-    &__dealer {
-        padding-top: 1rem;
-        font-size: $default-font-size;
-        font-family: Vazir;
-        text-decoration: none;
-        color: $color-black;
 
-        transition: all .2s;
+    &__bg {
+        position: relative;
+        overflow: hidden;
+        border-bottom-left-radius: 4rem;
 
-        &:hover {
-            transform: scale(1.05);
-            font-family: Vazir_Bold;
-        }
 
+        background: url("/images/car.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__bg::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+
+        background: linear-gradient(90deg,
+                transparent 35%,
+                rgba(255, 255, 255, 0.3) 55%,
+                rgba(255, 255, 255, 0.75) 75%,
+                #fff 100%);
     }
 }
