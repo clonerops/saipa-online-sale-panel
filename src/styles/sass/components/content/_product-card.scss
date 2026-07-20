@@ -59,8 +59,7 @@
   }
 
   &__text-box {
-    display: flex;
-    justify-content: space-between;
+    @include flex-between;
   }
 
   &__text {
@@ -90,8 +89,6 @@
   }
 
   &__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-between;
   }
 }

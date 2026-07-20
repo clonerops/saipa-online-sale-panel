@@ -2,14 +2,12 @@
 @use "../../abstracts/mixins" as *;
 
 .hero {
+  @include flex-between;
   background-color: $color-gray-300;
   border-top-left-radius: 1.6rem;
   border-top-right-radius: 1.6rem;
   border-top: 1px solid $color-gray-200;
   padding: 6rem 8.8rem;
-
-  display: flex;
-  justify-content: space-between;
 
   background:
     url("/svg/vector.svg") left top no-repeat,
