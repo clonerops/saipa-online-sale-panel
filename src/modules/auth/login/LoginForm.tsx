@@ -6,7 +6,6 @@ import Input from "../../../shared/components/Input";
 
 const LoginForm = () => {
   const [password, setPassword] = useState<boolean>(false);
-
   const actionShowPasswordState = () => setPassword(!password);
 
   return (
